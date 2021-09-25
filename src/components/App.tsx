@@ -1,7 +1,6 @@
 import { withFormik, FormikProps, FormikErrors, Form, Field } from "formik";
 import axios from 'axios'
 
-// Shape of form values
 interface FormValues {
   fullName: string;
   email: string;
@@ -54,7 +53,6 @@ const InnerForm = (props: OtherProps & FormikProps<FormValues>) => {
   );
 };
 
-// The type of props MyForm receives
 interface MyFormProps {
   message: string; 
 }
