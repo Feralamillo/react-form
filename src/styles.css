@@ -49,6 +49,16 @@ label{
     font-weight: 600;
 }
 
+.text-area{
+    padding: 0.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.308);
+    border-radius: 5px;
+}
+
+.text-area:hover{
+    outline: 1px solid rgba(0,128,128,0.329);
+}
+
 button{
     padding:1rem 0;
     border: none;

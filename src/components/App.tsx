@@ -35,11 +35,7 @@ const InnerForm = (props: OtherProps & FormikProps<FormValues>) => {
           name="description"
           rows="5"
           placeholder="Description"
-          style={{
-            padding: "0.5rem",
-            border: "1px solid rgba(128, 128, 128, 0.308)",
-            borderRadius: "5px",
-          }}
+          className = "text-area"
         />
         {touched.description && errors.description && (
           <div>{errors.description}</div>
