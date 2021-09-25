@@ -56,12 +56,11 @@ const InnerForm = (props: OtherProps & FormikProps<FormValues>) => {
 
 // The type of props MyForm receives
 interface MyFormProps {
-  message: string; // if this passed all the way through you might do this or make a union type
+  message: string; 
 }
 
-// Wrap our form with the withFormik HoC
 const MyForm = withFormik<MyFormProps, FormValues>({
-  // Transform outer props into form values
+
   mapPropsToValues: (props) => {
     return {
       email: "",
@@ -70,7 +69,6 @@ const MyForm = withFormik<MyFormProps, FormValues>({
     };
   },
 
-  // Add a custom validation function (this can be async too!)
   validate: (values: FormValues) => {
     let errors: FormikErrors<FormValues> = {};
     if (!values.email) {
@@ -100,11 +98,11 @@ const MyForm = withFormik<MyFormProps, FormValues>({
   },
 })(InnerForm);
 
-// Use <MyForm /> wherevs
-const Basic = () => (
+
+const App = () => (
   <div className="form-container">
     <MyForm message="Contact Us" />
   </div>
 );
 
-export default Basic;
+export default App;
