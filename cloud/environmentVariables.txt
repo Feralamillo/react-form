@@ -1,0 +1,8 @@
+MAILJET_API_KEY => Your Mailjet API key
+MAILJET_API_SECRET => Your Mailjet API Secret
+FROM_EMAIL_ADDRESS => The sender email address
+TO_EMAIL_ADDRESS => The fixed email address you want to send the emails to.
+
+
+
+PS: Before deploying please check the host details on line 8 in sendMailer.js matches the host details in your Mailjet SMTP settings.
